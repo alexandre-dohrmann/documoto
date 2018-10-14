@@ -1,3 +1,57 @@
+Documoto JavaScript Code Exercise - Alexandre J. Dohrmann
+
+1.  How to build and run my project
+I built my project using "React". I wanted to show some of the React skills I've learned in order to complete this project.
+
+2.  My thought process when creating the solution
+My thought process in creating this solution was to have the easiest, and visually-appealing solution for the given project and API data. A user can navigate the site with ease using the Navbar to go home back to the displayed/available part pages. When a user clicks on a given page, they're taken to the individual page with the part information listed with thumbnail and descriptive information.
+I know we were supposed to do minimal styling, but I also wanted to show my chops for visuals as well as using Documoto's given site and styling to sort of replicate what Documoto's look and feel currently is on their home site.
+
+3. Some tradeoffs I made
+I definitely traded some things like conditional statements and logic to make the app as simple as possible. I would have loved to create more mapped statements, however, the API data was only available for the first page (PG0). The other objects were empty (http://localhost:8080/pages/PG1/parts and http://localhost:8080/pages/PG2/parts). I'm not sure if this was on purpose, but there was no data being rendered in those. It made it difficult to create one point of URL entry. 
+
+4. What I would implement with more time (features, fixes, technical debt corrections, etc)
+I would have loved to have more time creating a better experience across devices (Mobile, Tablet) using better bootstrap/grid/media-queries to enhance the user experience. I'd like to learn more about testing. I will definitely do this on my spare time!
+I would've also liked to utitlize a ".env" file, but given the data coming from the .jar file, I was unable to parse from json/text as the data comiing from the .jar appeared to be in html format? I'd love to learn how to get around this if possible, but I don't think I can do this from the front-end, it would have to be updated server-side?
+
+5. The only thing needed to install and run this project would be an "npm install" in your command line. If needed you can "npm install react" as well as "npm install bootstrap". Everything should work automatically, but I also used React Router as navigation: 
+
+        <Route path="/pages/PG0" component={IndividualPage0} />
+        <Route path="/pages/PG1" component={IndividualPage1} />
+        <Route path="/pages/PG2" component={IndividualPage2} />
+        <Route path="/pages" component={PagesContainer} />
+        <Route exact path="/" component={HomePage} />
+
+
+6.  My Github repository can be accessed here: https://github.com/alexandre-dohrmann/documoto
+
+
+Thank you very much and please let me know if you have any additional questions. I will be happy to oblige!
+
+Alexandre J. Dohrmann
+alexandrejdohrmann@gmail.com
+www.alexandre-dohrmann.com
+(415) 954-2003
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
