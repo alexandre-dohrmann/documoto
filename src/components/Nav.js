@@ -1,27 +1,26 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import '../App.css';
-import Pages from '../components/Pages';
+import React from 'react';
 
 
 const Nav = () => {
 
     return (
-        <div>
-            <div className="home-header-div">
-                <div className="h1-div">
-                    <img src={"/images/documoto.png"} className="App-logo" alt="logo" />
-                </div>
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+            <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             </div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <ul className="nav navbar-nav">
-                    <li>
-                        <Link className="nav-links m-4" to="/">Documoto Home</Link>
+            <div className="mx-auto order-0">
+                <img src={"/images/documoto-hp.png"} className="navbar-brand mx-auto app-logo" alt="logo" />
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul className="navbar-nav ml-auto">
+                    <li className="nav-item">
+                        <a className="nav-link nav-links" href="/pages">Home</a>
                     </li>
                 </ul>
-            </nav>
-            <Pages />
-        </div>
+            </div>
+        </nav>
     );
 }
 
