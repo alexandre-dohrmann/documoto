@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 const PG2 = "http://localhost:8080/pages/PG2";
+const partsPG2 = "http://localhost:8080/pages/PG2/parts";
+
 
 
 class IndividualPage2 extends Component {
@@ -9,6 +11,7 @@ class IndividualPage2 extends Component {
         this.state = {
             isLoaded: false,
             page2: [],
+            parts: [],
         }
     }
 
@@ -18,7 +21,15 @@ class IndividualPage2 extends Component {
             .then(json => {
                 this.setState({
                     isLoaded: true,
-                    page1: json,
+                    page2: json,
+                })
+            })
+        fetch(partsPG2)
+            .then(res => res.json())
+            .then(json => {
+                this.setState({
+                    isLoaded: true,
+                    parts: json,
                 })
             })
     }
@@ -28,7 +39,9 @@ class IndividualPage2 extends Component {
             return <div>Loading...</div>
         } else {
             return (
-                <h4>THIS IS PAGE 2</h4>
+                <div className="page0">
+                    <h1 className="indiv-page-header"><span className="indiv-page-header-span">This is Page 2</span></h1>
+                </div>
             )
         }
     }

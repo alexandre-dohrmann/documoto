@@ -10,9 +10,6 @@ import Nav from './components/Nav';
 
 
 
-require('dotenv').config();
-
-
 
 const App = () => {
   return (
@@ -24,7 +21,6 @@ const App = () => {
         <Route path="/pages/PG2" component={IndividualPage2} />
         <Route path="/pages" component={PagesContainer} />
         <Route exact path="/" component={HomePage} />
-
       </Switch>
     </main>
   );

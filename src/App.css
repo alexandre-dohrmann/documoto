@@ -3,10 +3,12 @@
 /* ********* HomePage ********* */
 /* **************************** */
 
+
 .app-logo2 {
-  max-width: 500px;
+  max-width: 300px;
   display: inline-block;
   margin-bottom: 25px;
+  padding-top: 25px;
 }
 
 .homepage {
@@ -132,26 +134,27 @@
 
 .page0 {
   text-align: center;
-  background: url('/images/industrial.jpg');
-  height: 100%;
-  width: 100%;
-  position: fixed;
+  background: url('/images/industrial-pages.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  width: 100%;
   color: #eee;
-  padding-top:25px;
+  padding-top:50px;
+  padding-bottom:100px;
 }
 
 .header-img-div {
-  max-width: 75%;
+  max-width: 90%;
   text-align: center;
+  display: inline-flex;
 }
 
 .indiv-page-header {
   font:  normal bold 30px / 35px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif !important;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 .indiv-page-header-span {
@@ -161,7 +164,6 @@
 }
 
 .indiv-page-img {
-  max-height: 300px;
   max-width: 300px;
 }
 
@@ -193,6 +195,55 @@
 }
 
 .details2:hover {
-  background-color: darkblue !important;
+  background-color: #eee !important;
   text-decoration: underline !important;
+}
+
+/* ***************************************************** */
+/* ********* Individual Page - Parts (0, 1, 2) ********* */
+/* ***************************************************** */
+
+.parts {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.part-details {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.part-name {
+  font:  normal bold 20px / 22px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif !important;
+  margin-top: 8px;
+  text-align: center;
+  color: #5891e8;
+}
+
+.indiv-part {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+}
+
+.part-thumbnail {
+  border: 1px solid #ddd; 
+  border-radius: 4px;  
+  padding: 5px; 
+  max-height: 100px;
+}
+
+.part-thumbnail:hover {
+  box-shadow: 0 0 5px 5px #5891e8;
+}
+
+.part-id, .part-number {
+  font:  normal bold 14px / 16px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
+  line-height: 0.8;
+  text-align: left;
+}
+
+.parts-description {
+  font:  normal bold 14px / 16px "Source Sans Pro", Helvetica, Arial, Verdana, sans-serif;
+  color: #5891e8;
 }
